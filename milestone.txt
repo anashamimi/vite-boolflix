@@ -1,0 +1,17 @@
+-MILESTONE 1:
+Il sito può essere suddiviso in due componenti HeaderComponent e FilmListCompinent.
+il HeaderComponent dovrà contenere la navbar del nostro sito, mentre l'altro componente conterrà la lista dei film.
+effettuare la chiamata all'api di the movie db e renderlo reattivo all'interno del file store.js
+
+
+-MILESTONE 2:
+creare un componente aggiuntivo per la search bar.
+il nuovo componente deve permettere all'utente di cercare film dal loro nome e quindi bisogna effettuare una chiamata all'API.
+
+
+-MILESTONE 3:
+migliorare la grafica.
+rendere il sito responsive.
+mettere un effetto all'hover sulle card dei film, dove viene mostrato delle caratteristiche del film.
+far in modo che alla ricerca vengano divisi i film dalle serie tv.
+
