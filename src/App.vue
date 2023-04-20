@@ -1,23 +1,25 @@
 <template>
   <div>
     <HeaderComponent @on-search="getData"/>
+
+
     <section class="container-fluid text-white">
       <h2>MOVIES</h2>
       <div class="row">
         <FilmListComponent v-for="(film, index) in store.filmList" :key="film.id"
         :image="store.imagePath + film.poster_path"
         :title="film.title" :originaltitle="film.original_title"
-        :lenguage="film.original_lenguage" :vote="film.vote_average"/>  
+        :language="film.original_language" :vote="film.vote_average"/>  
       </div>
     </section>
 
     <section class="container-fluid text-white">
       <h2>SERIES</h2>
       <div class="row">
-        <FilmListComponent v-for="(film, index) in store.filmList" :key="film.id"
+        <FilmListComponent v-for="(film, index) in store.seriesList" :key="film.id"
         :image="store.imagePath + film.poster_path"
         :title="film.name" :originaltitle="film.original_name"
-        :lenguage="film.original_lenguage" :vote="film.vote_average"/>  
+        :language="film.original_language" :vote="film.vote_average"/>  
       </div>
     </section>
       
@@ -59,7 +61,7 @@ import HeaderComponent from './components/HeaderComponent.vue';
         }
         axios.get(url, options).then((res) => {
           console.log(res.data.results);
-          this.store.filmList = res.data.results;
+          this.store.seriesList = res.data.results;
         })
       },
 

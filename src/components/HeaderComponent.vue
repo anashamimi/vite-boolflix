@@ -6,7 +6,7 @@
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Cerca un film"
                     v-model.trim="store.params.query" @keyup.enter="$emit('onSearch')">
-                    <button @click="$emit('on-search')" type="button" class="btn btn-outline-light">Cerca</button>
+                    <button @click="$emit('onSearch')" type="button" class="btn btn-outline-light">Cerca</button>
                 </form>
             </div>
         </nav>

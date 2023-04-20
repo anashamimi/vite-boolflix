@@ -6,7 +6,7 @@
             </div>
             <p>{{ title }}</p>
             <p>{{ originaltitle }}</p>
-            <p>{{ lenguage }}</p>
+            <p>{{ language }}</p>
             <p>{{ vote }}</p>
         </div>
         
@@ -18,7 +18,7 @@ import { store } from '../data/store';
     export default {
         name: 'FilmListComponent',
         props: [
-            'title', 'originaltitle', 'lenguage', 'vote', 'image'
+            'title', 'originaltitle', 'language', 'vote', 'image'
         ],
         data() {
             return {
