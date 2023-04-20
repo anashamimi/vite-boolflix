@@ -4,8 +4,9 @@
             <div class="container-fluid">
                 <h2>Boolflix</h2>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Cerca un film">
-                    <button type="button" class="btn btn-outline-light">Cerca</button>
+                    <input class="form-control me-2" type="search" placeholder="Cerca un film"
+                    v-model.trim="store.params.query" @keyup.enter="$emit('onSearch')">
+                    <button @click="$emit('on-search')" type="button" class="btn btn-outline-light">Cerca</button>
                 </form>
             </div>
         </nav>
