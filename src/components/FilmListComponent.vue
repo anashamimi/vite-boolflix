@@ -1,8 +1,8 @@
 <template>
   <div class="col-12 col-sm-3 col-md-2">
-    <vue-flip active-click class="card">
+    <vue-flip active-click height="300px">
       <template v-slot:front>
-        <div class=" card-img">
+        <div class="card-img">
           <img :src="image" :alt="title" class="img-fluid">
         </div>
       </template>
@@ -45,37 +45,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.flip-card {
+.card-body{
   background-color: black;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  color: white;
-  transform: rotateY(180deg);
+  height: 100%;
 }
 </style>
