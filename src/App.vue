@@ -9,7 +9,8 @@
         <FilmListComponent v-for="(film, index) in store.filmList" :key="film.id"
         :image="store.imagePath + film.poster_path"
         :title="film.title" :originaltitle="film.original_title"
-        :language="film.original_language" :vote="film.vote_average"/>  
+        :language="film.original_language" :vote="film.vote_average"
+        :date="film.release_date"/>  
       </div>
     </section>
 
@@ -19,7 +20,8 @@
         <FilmListComponent v-for="(film, index) in store.seriesList" :key="film.id"
         :image="store.imagePath + film.poster_path"
         :title="film.name" :originaltitle="film.original_name"
-        :language="film.original_language" :vote="film.vote_average"/>  
+        :language="film.original_language" :vote="film.vote_average"
+        :date="film.first_air_date"/>  
       </div>
     </section>
       
