@@ -4,8 +4,8 @@
 
 
     <section class="container-fluid text-white">
-      <h2>MOVIES</h2>
-      <div class="row">
+      <h2 class="m-4">MOVIES</h2>
+      <div class="row g-5">
         <FilmListComponent v-for="(film, index) in store.filmList" :key="film.id"
         :image="store.imagePath + film.poster_path"
         :title="film.title" :originaltitle="film.original_title"
@@ -14,8 +14,8 @@
     </section>
 
     <section class="container-fluid text-white">
-      <h2>SERIES</h2>
-      <div class="row">
+      <h2 class="m-4">SERIES</h2>
+      <div class="row g-5">
         <FilmListComponent v-for="(film, index) in store.seriesList" :key="film.id"
         :image="store.imagePath + film.poster_path"
         :title="film.name" :originaltitle="film.original_name"

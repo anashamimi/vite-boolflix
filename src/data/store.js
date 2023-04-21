@@ -13,7 +13,7 @@ export const store = reactive({
         query: ''
     },
 
-    imagePath: 'https://image.tmdb.org/t/p/original',
+    imagePath: 'https://image.tmdb.org/t/p/w342',
 
 
 });
